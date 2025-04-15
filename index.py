@@ -46,11 +46,15 @@ class Lorry(Vehicle):
     def move(self):
         print("The Lorry is driving on the road")
         
+class Boat(Vehicle):
+    def move(self):
+        print("Sailing on water")
+        
 def vehicle_movement(vehicle):
     vehicle.move()
     
     
-vehicles = [Lorry()]
+vehicles = [Lorry(), Boat()]
 
 for v in vehicles:
     vehicle_movement(v)
